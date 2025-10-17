@@ -2,6 +2,7 @@ import json
 
 
 def filter_users_by_name(name):
+    """enables to filter the data through the name"""
     with open("users.json", "r") as file:
         users = json.load(file)
 
@@ -12,6 +13,7 @@ def filter_users_by_name(name):
 
 
 def filter_users_by_age(min_age):
+    """enables to filter the data through the age"""
     with open("users.json", "r") as file:
         users = json.load(file)
 
@@ -21,6 +23,7 @@ def filter_users_by_age(min_age):
         print(user)
 
 def filter_by_email(mail):
+    """enables to filter the data through the email"""
     with open("users.json", "r") as file:
         users = json.load(file)
 
